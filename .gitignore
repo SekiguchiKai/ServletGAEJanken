@@ -1,0 +1,10 @@
+.classpath
+.project
+.settings
+.DS_Store
+appengine-web.xml
+logging.properties
+classes/
+lib/
+META-INF
+log4j.properties
