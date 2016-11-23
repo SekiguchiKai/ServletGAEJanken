@@ -11,8 +11,8 @@ import java.io.Serializable;
 
 public class Janken implements Serializable {
 
-	private int clientUchite;
-	private int serverUchite;
+	private String clientUchite;
+	private String serverUchite;
 	private String result;
 
 	/**
@@ -20,7 +20,7 @@ public class Janken implements Serializable {
 	 * 
 	 * @return クライアントの打ち手を返す
 	 */
-	public double getClientUchite() {
+	public String getClientUchite() {
 		return this.clientUchite;
 	}
 
@@ -30,7 +30,7 @@ public class Janken implements Serializable {
 	 * @param clientUchite
 	 *            クライアントの打ち手
 	 */
-	public void setClientUchite(int clientUchite) {
+	public void setClientUchite(String clientUchite) {
 		this.clientUchite = clientUchite;
 	}
 
@@ -39,7 +39,7 @@ public class Janken implements Serializable {
 	 * 
 	 * @return サーバの打ち手を返す
 	 */
-	public double getServerUchite() {
+	public String getServerUchite() {
 		return this.serverUchite;
 	}
 
@@ -49,7 +49,7 @@ public class Janken implements Serializable {
 	 * @param serverUchite
 	 *            クライアントの打ち手
 	 */
-	public void setServerUchite(int serverUchite) {
+	public void setServerUchite(String serverUchite) {
 		this.serverUchite = serverUchite;
 	}
 

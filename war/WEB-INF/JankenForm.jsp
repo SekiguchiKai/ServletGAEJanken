@@ -10,13 +10,13 @@
   </head>
   <body>
       <p>じゃんけん勝負だ！好きな打ち手を選べ!!</p>
-      <form action="/calcprocess" method="post" id="uchiteForm">
+      <form action="/servletgaejanken" method="post" id="uchiteForm">
         <div>
-        <input type="radio" name="C_uchite" value="0" checked="checked" id="gu">
+        <input type="radio" name="clientUchite" value="グー" checked="checked" id="gu">
         <label for="gu">グー</label>
-        <input type="radio" name="C_uchite" value="1" id="tyoki">
+        <input type="radio" name="clientUchite" value="チョキ" id="tyoki">
         <label for="tyoki">チョキ</label>
-        <input type="radio" name="C_uchite" value="2" id="pa">
+        <input type="radio" name="clientUchite" value="パー" id="pa">
         <label for="pa">パー</label>
         </div>
         <div>

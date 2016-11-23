@@ -5,9 +5,9 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class JankenLogicTest {
-	private final int GU = 0;
-	private final int TYOKI = 1;
-	private final int PA = 2;
+	private final String GU = "グー";
+	private final String TYOKI = "チョキ";
+	private final String PA = "パー";
 
 	/**
 	 * judgeResultをテストするためのクラス
@@ -74,7 +74,7 @@ public class JankenLogicTest {
 		// 2.JankenLogicの呼び出し
 		assertEquals("クライアントがグー, サーバーがパーの場合のテスト", "君の負けだ", janken6.getResult());
 
-		int uchiteArray[] = { GU, TYOKI, PA };
+		String uchiteArray[] = { GU, TYOKI, PA };
 
 		for (int i = 0; i < uchiteArray.length; i++) {
 

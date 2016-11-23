@@ -16,6 +16,7 @@ public class ServletGaeJankenServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
+		// フォワード
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/JankenForm.jsp");
 		try {
 			dispatcher.forward(request, response);
@@ -32,15 +33,11 @@ public class ServletGaeJankenServlet extends HttpServlet {
 
 		// リクエストパラメータを取得
 		String clientUchite = request.getParameter("clientUchite");
-		// クライアントの打ち手
 
 		// 入力値をプロパティに設定
 		Janken janken = new Janken();
-
-		int intClientUchite = Integer.parseInt(clientUchite);
-
 		// セッターで登録
-		janken.setClientUchite(intClientUchite);
+		janken.setClientUchite(clientUchite);
 
 		// じゃんけんのロジックを実施
 		JankenLogic jankenLogic = new JankenLogic();
